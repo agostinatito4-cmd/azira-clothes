@@ -1,122 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Tienda de Ropa</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #f2f2f2;
-        }
+<meta charset="UTF-8">
+<title>Azira Clothes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            background: #000;
-            color: #fff;
-            padding: 25px;
-            text-align: center;
-        }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
-        .productos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .producto {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,.1);
-        }
-
-        .producto img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .producto h3 {
-            margin: 10px 0 5px;
-        }
-
-        .precio {
-            font-weight: bold;
-            color: #0a8f08;
-            margin-bottom: 10px;
-        }
-
-        button {
-            background: black;
-            color: white;
-            border: none;
-            padding: 12px 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            background: #333;
-        }
-
-        footer {
-            background: #111;
-            color: #aaa;
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Nombre de tu Marca</h1>
-    <p>Ropa urbana • Envíos a todo el país</p>
-</header>
-
-<section class="productos">
-
-    <div class="producto">
-        <img src="https://via.placeholder.com/400x500" alt="Remera">
-        <h3>Remera Oversize</h3>
-        <p class="precio">$12.000</p>
-        <button onclick="comprar('Remera Oversize - $12.000')">Comprar</button>
-    </div>
-
-    <div class="producto">
-        <img src="https://via.placeholder.com/400x500" alt="Buzo">
-        <h3>Buzo Canguro</h3>
-        <p class="precio">$18.500</p>
-        <button onclick="comprar('Buzo Canguro - $18.500')">Comprar</button>
-    </div>
-
-    <div class="producto">
-        <img src="https://via.placeholder.com/400x500" alt="Pantalón">
-        <h3>Pantalón Cargo</h3>
-        <p class="precio">$22.000</p>
-        <button onclick="comprar('Pantalón Cargo - $22.000')">Comprar</button>
-    </div>
-
-</section>
-
-<footer>
-    <p>📲 Compras por WhatsApp</p>
-</footer>
-
-<script>
-function comprar(producto) {
-    const telefono = "5493510000000"; // CAMBIAR
-    const mensaje = `Hola! Quiero comprar: ${producto}`;
-    window.open(
-        `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`,
-        "_blank"
-    );
+body{
+    margin:0;
+    font-family:'Montserrat', sans-serif;
+    background:#f6f6f6;
 }
-</script>
 
-</body>
-</html>
+header{
+    background:linear-gradient(135deg,#000,#222);
+    color:white;
+    padding:50px 20px;
+
